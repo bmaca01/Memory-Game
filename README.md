@@ -42,8 +42,11 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+ - Adjusting the length of the sequence through the settings menu
 ![](http://g.recordit.co/8IcDTpubi7.gif)
+ - Playing the game
 ![](http://g.recordit.co/b9LMBR9ehx.gif)
+ - Showing off the timer and mistakes functionality + adjusting how much time the user has to guess
 ![](http://g.recordit.co/2zTRmfDlUw.gif)
 
 
