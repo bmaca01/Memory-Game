@@ -1,0 +1,199 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+div.header {
+  text-align: left;
+  padding: 0.1em;
+  margin: 0.8em;
+  max-width: 75%;
+  display: block;
+}
+
+div.gameArea {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0.1em;
+}
+
+div.scoreboard {
+  display: block;
+  float: left;
+}
+
+div.settings-wrapper {
+  display: inline-block;
+  float: right;
+  width: 75%;
+  margin-top: 25px;
+}
+.settings-wrapper > p {
+  margin-right: 25%;
+  text-align: right;
+  user-select: none;
+}
+
+p > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modal {
+  margin: auto;
+  background-color: white;
+  position: relative;
+  outline: 0;
+  width: 500px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  box-sizing: inherit;
+  padding-top: 0.01em;
+  padding-right: 16px;
+  padding-bottom: 0.01em;
+  padding-left: 16px;
+}
+
+.container > button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li > select {
+  display: inline;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#controlButtons {
+  display: inline;
+  float: left;
+  width: 25%;
+  height: 60px;
+}
+
+#controlButtons > button {
+  margin: 5%;
+}
+
+#settings-menu {
+  z-index: 3;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+#timer {
+  display: inline;
+  float: right;
+  width: 75%;
+  height: 60px;
+  text-align: right;
+}
+
+#timer > p {
+  margin-right: 25%;
+}
+
+#gameButtonArea {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button5 {
+  background: #ffd6a5;
+}
+
+#button6 {
+  background: #bdb2ff;
+}
+
+#button1:active,
+#button1.lit {
+  background: green;
+}
+
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+
+#button3:active,
+#button3.lit {
+  background: red;
+}
+
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+#button5:active,
+#button5.lit {
+  background: orange;
+}
+
+#button6:active,
+#button6.lit {
+  background: #484360;
+}

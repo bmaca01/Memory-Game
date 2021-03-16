@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Light and Sound Memory Game</h1>
+      <p>
+        Welcome to the game! Repeat back the pattern by pressing buttons.
+      </p>
+    </div>
+    <div id="settings-menu" class="hidden">
+      <div class="modal">
+        <div class="container">
+          <ul>
+            <li>
+              Total Rounds:
+
+              <select id="rounds">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option selected>10</option>
+              </select>
+            </li>
+            <li>
+              Enable Timer:
+              <input type="checkbox" id="useTimer" selected />
+            </li>
+            <li>
+              Timer Time (seconds):
+
+              <select id="timerTime">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option selected>8</option>
+              </select>
+            </li>
+            <li>
+              Volume:
+              <input type="range" min="1" max="100" value="50" id="volSlider" />
+            </li>
+            <li>
+              Current Volume:
+              <p id="volume" style="display: inline;"></p>
+            </li>
+          </ul>
+          <button id="confirm" onclick="confirmSettings()">
+            Apply Settings
+          </button>
+          <button id="closeSettings" onclick="closeSettings()">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="gameArea">
+      <div id="controlButtons">
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+      </div>
+      <div id="timer">
+        <p id="clock" class="hidden"></p>
+        <p id="turn">Click Start to Play</p>
+      </div>
+      <div class="scoreboard">
+        <p id="mistakes">Mistakes:</p>
+        <p id="progress">Progress:</p>
+      </div>
+      <div class="settings-wrapper">
+        <p>
+          <a href="javascript:void(0)" onclick="openSettings()">Settings</a>
+        </p>
+      </div>
+      <div id="gameButtonArea">
+        <button
+          id="button1"
+          onclick="guess(1)"
+          onmousedown="startTone(1)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button2"
+          onclick="guess(2)"
+          onmousedown="startTone(2)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button3"
+          onclick="guess(3)"
+          onmousedown="startTone(3)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button4"
+          onclick="guess(4)"
+          onmousedown="startTone(4)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button5"
+          onclick="guess(5)"
+          onmousedown="startTone(5)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button6"
+          onclick="guess(6)"
+          onmousedown="startTone(6)"
+          onmouseup="stopTone()"
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>
